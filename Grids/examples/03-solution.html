@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" media="screen" href="defaults.css" />
+    <title>Komplexes Grid Layout mit Grid Areas</title>
+    <style>
+      .grid-container {
+        display: grid;
+        grid-template-columns: repeat(
+          4,
+          1fr
+        ); /* Vier Spalten haben eine Breite von jeweils 100px */
+        grid-template-rows: repeat(3, 200px); /* Drei Reihen haben eine Höhe von jeweils 200px */
+        gap: 20px; /* Abstand zwischen den Grid-Elementen */
+
+        grid-template-areas:
+          "header header header header"
+          "sidebar main main main"
+          "sidebar main main main"
+          "sidebar widget1 widget2 widget3";
+      }
+
+      header {
+        grid-area: header; /* Platzierung im Grid-Area-Layout */
+        background-color: #333;
+        color: white;
+        padding: 20px;
+      }
+
+      nav {
+        grid-area: sidebar; /* Platzierung im Grid-Area-Layout */
+        background-color: #666;
+        color: white;
+        padding: 20px;
+      }
+
+      main {
+        grid-area: main; /* Platzierung im Grid-Area-Layout */
+        background-color: #f4f4f4;
+        padding: 20px;
+      }
+
+      .widget {
+        background-color: #999;
+        color: white;
+        padding: 20px;
+      }
+
+      .widget1 {
+        grid-area: widget1;
+      }
+      .widget2 {
+        grid-area: widget2;
+      }
+      .widget3 {
+        grid-area: widget3;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="grid-container">
+      <header>
+        <h1>Header</h1>
+      </header>
+      <nav>
+        <h2>Navigation</h2>
+      </nav>
+      <main>
+        <h2>Hauptinhalt</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae consectetur lorem, eu
+          tristique lectus.
+        </p>
+      </main>
+      <div class="widget widget1">
+        <h2>Widget 1</h2>
+      </div>
+      <div class="widget widget2">
+        <h2>Widget 2</h2>
+      </div>
+      <div class="widget widget3">
+        <h2>Widget 3</h2>
+      </div>
+    </div>
+  </body>
+</html>
