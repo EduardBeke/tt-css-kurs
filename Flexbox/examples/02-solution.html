@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' type='text/css' media='screen' href='defaults.css'>
+    <title> </title>
+    <style>
+        .container {
+            display: flex;
+        }
+        
+        .column {
+            flex: 1;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        
+        .column:first-child {
+            background-color: lightcoral;
+        }
+        
+        .column:last-child {
+            background-color: lightseagreen;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="column">Column 1</div>
+        <div class="column">Column 2</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" media="screen" href="defaults.css" />
+    <title> </title>
+    <style>
+      .gallery {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+      }
+      
+      .photo {
+        background-color: lightgray;
+        flex: 1 1 calc(33.333% - 20px); /* Flex-grow, flex-shrink, and base size calculation */
+        height: 150px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="gallery">
+      <div class="photo">Photo 1</div>
+      <div class="photo">Photo 2</div>
+      <div class="photo">Photo 3</div>
+      <div class="photo">Photo 4</div>
+      <div class="photo">Photo 5</div>
+      <div class="photo">Photo 6</div>
+    </div>
+  </body>
+</html>
