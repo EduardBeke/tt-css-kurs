@@ -6,27 +6,61 @@
     <link rel="stylesheet" type="text/css" media="screen" href="defaults.css" />
     <title> </title>
     <style>
-      .layout {
+      .container {
         display: flex;
+        flex-direction: column;
+        height: 100vh;
+      }
+      
+      .header {
+        background-color: lightsalmon;
+        padding: 20px;
+        text-align: center;
+      }
+      
+      .content-area {
+        display: flex;
+        flex: 1;
       }
       
       .sidebar {
+        background-color: lightgoldenrodyellow;
         width: 200px;
-        background-color: lightsteelblue;
         padding: 20px;
       }
       
-      .content {
+      .main-content {
+        background-color: lightskyblue;
         flex: 1;
-        background-color: lightgoldenrodyellow;
         padding: 20px;
+      }
+      
+      .footer {
+        display: flex;
+        background-color: lightgoldenrodyellow;
+        gap: 15px;
+      }
+      
+      .footer-section {
+        flex: 1;
+        background-color: lightcoral;
+        padding: 20px;
+        text-align: center;
       }
     </style>
   </head>
   <body>
-    <div class="layout">
-      <div class="sidebar">Sidebar</div>
-      <div class="content">Content</div>
+    <div class="container">
+      <div class="header">Header</div>
+      <div class="content-area">
+        <div class="sidebar">Sidebar</div>
+        <div class="main-content">Main Content</div>
+      </div>
+      <div class="footer">
+        <div class="footer-section">Footer 1</div>
+        <div class="footer-section">Footer 2</div>
+        <div class="footer-section">Footer 3</div>
+      </div>
     </div>
   </body>
 </html>

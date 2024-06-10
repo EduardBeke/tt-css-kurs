@@ -6,23 +6,45 @@
     <link rel="stylesheet" type="text/css" media="screen" href="defaults.css" />
     <title> </title>
     <style>
-      .layout {
-
+      .container {
+      }
+      
+      .header {
+        background-color: lightsalmon;
+      }
+      
+      .content-area {
       }
       
       .sidebar {
-
+        background-color: lightgoldenrodyellow;
       }
       
-      .content {
-
+      .main-content {
+        background-color: lightskyblue;
+      }
+      
+      .footer {
+        background-color: lightgoldenrodyellow;
+      }
+      
+      .footer-section {
+        background-color: lightcoral;
       }
     </style>
   </head>
   <body>
-    <div class="layout">
-      <div class="sidebar">Sidebar</div>
-      <div class="content">Content</div>
+    <div class="container">
+      <div class="header">Header</div>
+      <div class="content-area">
+        <div class="sidebar">Sidebar</div>
+        <div class="main-content">Main Content</div>
+      </div>
+      <div class="footer">
+        <div class="footer-section">Footer 1</div>
+        <div class="footer-section">Footer 2</div>
+        <div class="footer-section">Footer 3</div>
+      </div>
     </div>
   </body>
 </html>
