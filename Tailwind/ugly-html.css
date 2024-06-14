@@ -1,0 +1,45 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+header,
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 6px;
+}
+
+header {
+  padding-top: 4px;
+}
+
+footer {
+  padding-bottom: 4px;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+}
+
+nav a {
+  text-decoration: none;
+  color: #777;
+
+  &:hover {
+    color: #333;
+  }
+}
+
+h1,
+h2 {
+  font-weight: bold;
+}
+
+section {
+  padding: 6px;
+}
