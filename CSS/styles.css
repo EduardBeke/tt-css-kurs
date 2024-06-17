@@ -1,0 +1,119 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+  padding-bottom: 200px;
+}
+
+h1, h2 {
+  color: #333;
+}
+
+.example {
+  margin-bottom: 20px;
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+
+/* Selectors */
+.class-selector {
+  color: blue;
+}
+
+#id-selector {
+  color: green;
+}
+
+span {
+  color: red;
+}
+
+.pseudo-selector:hover {
+  color: orange;
+}
+.pseudo-selector-click:active {
+  color: orange;
+  background-color: purple;
+  box-shadow: 2px 2px 5px #fc894d
+}
+
+/* Properties */
+.properties {
+  background-color: lightgray;
+  color: darkslategray;
+  border-radius: 10px;
+}
+
+/* Margin and Padding */
+.margin-padding {
+  margin: 20px;
+  padding: 20px;
+  background-color: lightblue;
+}
+
+/* Positioning */
+.positioning {
+  position: relative;
+  top: 30px;
+  left: 60px;
+  background-color: lightcoral;
+}
+
+/* Vendor Prefixes */
+.vendor-prefixes {
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  border-radius: 15px;
+  background-color: lightgreen;
+}
+
+/* Colors */
+.rgba-color {
+  background-color: rgba(255, 0, 0, 0.5);
+  height: 50px;
+}
+
+.hex-color {
+  background-color: #ff573380;
+  height: 50px;
+}
+
+/* Font Sizes */
+.font-size-px {
+  font-size: 16px;
+}
+
+.font-size-pt {
+  font-size: 12pt;
+}
+
+.font-size-em {
+  font-size: 1.5em;
+}
+
+/* Media Queries */
+.media-query {
+  background-color: lightyellow;
+}
+
+@media (max-width: 600px) {
+  .media-query {
+    background-color: lightpink;
+  }
+}
+
+/* Animations */
+@keyframes example-animation {
+  0% { background-color: red; left: 0px; top: 0px; }
+  50% { background-color: yellow; left: 200px; top: 0px; }
+  100% { background-color: green; left: 200px; top: 200px; }
+}
+
+.animation {
+  position: relative;
+  animation-name: example-animation;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  height: 40px;
+  width: 40px;
+}

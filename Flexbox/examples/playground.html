@@ -4,15 +4,159 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel='stylesheet' type='text/css' media='screen' href='defaults.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='playground.css'>
     <title> </title>
     <style>
         .container {
-            
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .flexbox-example {
+            display: flex;
+            border: 2px solid lightcoral;
+            padding: 10px;
+            margin-bottom: 20px;
+            gap: 10px;
+        }
+
+        .flexbox-example:nth-child(even){
+            border-color: lightseagreen;
+        }
+        
+        .item {
+            background-color: lightblue;
+            padding: 20px;
+            text-align: center;
+            border: 1px solid #999;
+        }
+        
+        /* Flex Direction */
+        .flex-direction-row {
+            flex-direction: row;
+        }
+        
+        .flex-direction-column {
+            flex-direction: column;
+        }
+
+        .flex-direction-row-reverse {
+            flex-direction: row-reverse;
+        }
+        
+        .flex-direction-column-reverse {
+            flex-direction: column-reverse;
+        }
+        
+        /* Justify Content */
+        .justify-content-center {
+            justify-content: center;
+        }
+
+        .justify-content-flex-start {
+            justify-content: flex-start;
+        }
+
+        .justify-content-flex-end {
+            justify-content: flex-end;
+        }
+
+        .justify-content-space-around {
+            justify-content: space-around;
+        }
+        
+        .justify-content-space-between {
+            justify-content: space-between;
+        }
+
+        .justify-content-space-evenly {
+            justify-content: space-evenly;
+        }
+        
+        /* Align Items */
+        .align-items-flex-start {
+            align-items: flex-start;
+        }
+
+        .align-items-center {
+            align-items: center;
+        }
+        
+        .align-items-flex-end {
+            align-items: flex-end;
+        }
+
+        .align-items-baseline {
+            align-items: baseline;
+        }
+
+        .align-items-stretch {
+            align-items: stretch;
+        }
+        
+        /* Flex Wrap */
+        .flex-wrap {
+            flex-wrap: wrap;
+        }
+        
+        .flex-wrap .item {
+            flex: 1 1 200px;
         }
     </style>
 </head>
 <body>
+    <h1 style="padding-bottom: 1em;">Flexbox Playground</h1>
     <div class="container">
+
+        <!-- Flex Direction -->
+        <div class="flexbox-example flex-direction-row">
+            <div class="item">Item 1</div>
+            <div class="item">Item 2</div>
+            <div class="item">Item 3</div>
+        </div>
+
+        <div class="flexbox-example flex-direction-column">
+            <div class="item">Item 1</div>
+            <div class="item">Item 2</div>
+            <div class="item">Item 3</div>
+        </div>
+
+        <!-- Justify Content -->
+        <div class="flexbox-example justify-content-center">
+            <div class="item">Item 1</div>
+            <div class="item">Item 2</div>
+            <div class="item">Item 3</div>
+        </div>
+
+        <div class="flexbox-example justify-content-space-between">
+            <div class="item">Item 1</div>
+            <div class="item">Item 2</div>
+            <div class="item">Item 3</div>
+        </div>
+
+        <!-- Align Items -->
+        <div class="flexbox-example align-items-center" style="height: 150px;">
+            <div class="item">Item 1</div>
+            <div class="item">Item 2</div>
+            <div class="item">Item 3</div>
+        </div>
+
+        <div class="flexbox-example align-items-flex-end" style="height: 150px;">
+            <div class="item">Item 1</div>
+            <div class="item">Item 2</div>
+            <div class="item">Item 3</div>
+        </div>
+
+        <!-- Flex Wrap -->
+        <div class="flexbox-example flex-wrap">
+            <div class="item">Item 1</div>
+            <div class="item">Item 2</div>
+            <div class="item">Item 3</div>
+            <div class="item">Item 4</div>
+            <div class="item">Item 5</div>
+            <div class="item">Item 6</div>
+        </div>
     </div>
 </body>
 </html>

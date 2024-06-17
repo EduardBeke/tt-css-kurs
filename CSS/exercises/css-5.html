@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Basic Selectors</title>
+    <style>
+      /* Correcting grid layout for responsive design */
+      .responsive-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+      }
+
+      .box {
+        background-color: lightblue;
+        padding: 20px;
+        border: 1px solid #000;
+      }
+
+      /* Media query for smaller screens */
+      @media (max-width: 600px) {
+        .responsive-container {
+          grid-template-columns: 1fr;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="responsive-container">
+      <div class="box">Box 1</div>
+      <div class="box">Box 2</div>
+      <div class="box">Box 3</div>
+    </div>
+  </body>
+</html>
