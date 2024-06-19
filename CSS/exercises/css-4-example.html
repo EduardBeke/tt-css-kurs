@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      ul li:first-child {
+        color: blue;
+      }
+
+      ul li:last-child {
+        color: green;
+      }
+
+      p:hover {
+        text-decoration: underline;
+      }
+
+      ul li::before {
+        content: "|••";
+        color: salmon;
+        margin-right: 5px;
+      }
+
+      ul li::after {
+        content: " ••|";
+        color: darkkhaki;
+        margin-right: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <ul>
+      <li>Item 1</li>
+      <li>Item 2</li>
+      <li>Item 3</li>
+      <li>Item 4</li>
+    </ul>
+    <p>Hover over this text.</p>
+  </body>
+</html>
